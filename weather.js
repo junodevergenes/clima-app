@@ -4,7 +4,7 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 async function getCoordinates(city) {
-  const geoCodingUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
+  const geoCodingUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
   const response = await fetch(geoCodingUrl);
   const data = await response.json();
 
